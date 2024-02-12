@@ -47,4 +47,3 @@ def random_split_train_evaluate_test_from_extraction(extract: dict,
 def download_files(extract: dict, directory: str, bucket_name: str, s3_path: str, s3_client):
   for key, value in extract.items():
     s3_client.download_file(bucket_name, s3_path + key, directory + "/" + value + "/" + key)
-git 
