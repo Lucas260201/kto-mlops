@@ -1,7 +1,7 @@
 name: cats-dogs-other
 
 docker_env:
-  image: local/cats-dogs-other-train
+  image: quay.io/lucas26/kto/train/cats-dogs-other-2023-2024
 
 entry_points:
   main:
@@ -15,4 +15,3 @@ entry_points:
         model_filename: {type: str, default: final_model.keras}
         model_plot_filename: {type: str, default: model_plot.png}
     command: "python ./cats_dogs_other/train/train.py --split_ratio_train={split_ratio_train} --split_ratio_evaluate={split_ratio_evaluate} --split_ratio_test={split_ratio_test} --batch_size={batch_size} --epochs={epochs} --working_dir={working_dir}"
-    
