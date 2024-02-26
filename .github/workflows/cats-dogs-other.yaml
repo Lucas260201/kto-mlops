@@ -2,7 +2,7 @@ name: Cats and Dogs CI/CD
 on: 
   push:
     branches:
-      - lucas/step04
+      - lucas/step04_eval
 
 jobs:
   train:
